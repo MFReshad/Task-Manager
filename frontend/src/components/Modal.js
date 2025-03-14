@@ -38,7 +38,7 @@ class CustomModal extends Component {
                     Task Item
                 </ModalHeader>
                 <ModalBody>
-                    <Form>
+                    <Form >
                         <FormGroup>
                             <Label for="title">Title</Label>
                             <Input
@@ -47,17 +47,18 @@ class CustomModal extends Component {
                                 value={this.state.activeItem.title}
                                 onChange={this.handleChange}
                                 placeholder="Enter Task Title"
+                                required
                             />
                         </FormGroup>
                         
                         <FormGroup>
-                            <Label for="details">Detaile</Label>
+                            <Label for="details">Details</Label>
                             <Input
                                 type="text"
                                 name="details"
                                 value={this.state.activeItem.details}
                                 onChange={this.handleChange}
-                                placeholder="Enter Task Detaile"
+                                placeholder="Enter Task Details"
                             />
                         </FormGroup>
                         

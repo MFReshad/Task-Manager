@@ -7,7 +7,7 @@ from .models import Todo
 
 
 def home(request):
-    return HttpResponse("Hello World")
+    return HttpResponse("Hello World!")
 
 class TodoView(viewsets.ModelViewSet):
     serializer_class = TodoSerializer

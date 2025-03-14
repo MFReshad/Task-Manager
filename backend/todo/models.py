@@ -8,7 +8,7 @@ class Todo(models.Model):
 
     title = models.CharField(max_length=100)
 
-    details = models.CharField(max_length=500)
+    details = models.CharField(max_length=500, null=True, blank=True)
 
     complete = models.BooleanField(default=False)
 
